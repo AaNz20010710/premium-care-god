@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Care Göd | Prémium Belső Autókozmetika & Kárpittisztítás</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Syne"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            obsidian: '#09090B',
+            charcoal: '#121215',
+            gold: {
+              300: '#F3E5AB',
+              400: '#D4AF37',
+              500: '#B8860B',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #09090B;
+      color: #F4F4F5;
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%);
+    }
+    .gold-text {
+      background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 60%, #C59B27 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass-card {
+      background: rgba(24, 24, 27, 0.65);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(212, 175, 55, 0.18);
+    }
+    .glass-card:hover {
+      border-color: rgba(212, 175, 55, 0.45);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold-400 selection:text-obsidian">
+
+  <!-- Navigáció -->
+  <nav class="fixed top-0 w-full z-50 bg-obsidian/80 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-5 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg border border-gold-400/50 flex items-center justify-center text-gold-400 font-display font-bold text-base">
+          PC
+        </div>
+        <div>
+          <span class="font-display text-lg tracking-wider font-bold text-white block leading-none">PREMIUM CARE</span>
+          <span class="text-[10px] tracking-[0.28em] text-gold-400 uppercase font-medium mt-0.5 block">Göd • Interior Studio</span>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8 text-sm text-zinc-400 font-medium">
+        <a href="#szolgaltatasok" class="hover:text-gold-300 transition">Csomagok & Árak</a>
+        <a href="#referencia" class="hover:text-gold-300 transition">Referencia</a>
+        <a href="#folyamat" class="hover:text-gold-300 transition">Hogyan dolgozom</a>
+      </div>
+
+      <a href="#foglalas" class="gold-gradient text-obsidian font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-lg shadow-gold-400/10 hover:opacity-90 transition">
+        Időpontfoglalás
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Szekció -->
+  <header class="relative pt-36 pb-24 px-5 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(212,175,55,0.12),_transparent_55%)] pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-gold-400/30 bg-gold-400/5 text-gold-300 text-xs tracking-widest uppercase mb-8 font-medium">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse"></span>
+        Exkluzív Belső Autókozmetika • Göd
+      </div>
+
+      <h1 class="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.06] mb-6">
+        Újszerű utastér,<br />
+        <span class="gold-text">kompromisszumok nélkül.</span>
+      </h1>
+
+      <p class="text-zinc-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-10 font-normal">
+        Mélyreható kárpittisztítás, kíméletes bőrápolás és precíz utastér-fertőtlenítés Gödön. 
+        Nem futószalagon dolgozom: minden autóra pontosan annyi időt szánok, amennyi a tökéletes végeredményhez szükséges.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#foglalas" class="w-full sm:w-auto gold-gradient text-obsidian font-bold px-8 py-4 rounded-full text-sm tracking-wide shadow-xl shadow-gold-400/15 hover:scale-[1.02] transition">
+          Szabad időpont kiválasztása
+        </a>
+        <a href="#szolgaltatasok" class="w-full sm:w-auto px-8 py-4 rounded-full text-sm font-medium text-zinc-300 border border-white/10 hover:border-gold-400/40 hover:text-white transition">
+          Csomagok megtekintése
+        </a>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4 max-w-xl mx-auto mt-16 pt-8 border-t border-white/5 text-center">
+        <div>
+          <p class="font-display text-2xl sm:text-3xl font-bold text-white">1 autó</p>
+          <p class="text-xs text-zinc-500 mt-1">Teljes fókusz egy időben</p>
+        </div>
+        <div>
+          <p class="font-display text-2xl sm:text-3xl font-bold text-gold-400">100%</p>
+          <p class="text-xs text-zinc-500 mt-1">Belső fókusz & precizitás</p>
+        </div>
+        <div>
+          <p class="font-display text-2xl sm:text-3xl font-bold text-white">Göd</p>
+          <p class="text-xs text-zinc-500 mt-1">Hernád köz • Zárt beálló</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Szolgáltatások / Csomagok -->
+  <section id="szolgaltatasok" class="scroll-mt-20 py-20 px-5 border-t border-white/5">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14">
+        <span class="text-gold-400 text-xs tracking-[0.25em] uppercase font-semibold">Átlátható Árazás</span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold mt-2 tracking-tight">Belső Kozmetikai Csomagok</h2>
+        <p class="text-zinc-400 text-sm mt-3 max-w-xl mx-auto">
+          Foglaláskor a megjegyzés mezőben egyszerűen írd be az autó típusát és a választott csomagot.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Alap csomag -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between transition duration-300">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs uppercase tracking-widest text-zinc-400 font-semibold">01 • Essential</span>
+              <span class="px-3 py-1 rounded-full text-xs bg-white/5 text-zinc-300">Kb. 1,5 – 2 óra</span>
+            </div>
+            <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-2">Alap Belső Tisztítás</h3>
+            <p class="text-zinc-400 text-sm mb-6">Rendszeresen karbantartott autók alapos frissítéséhez.</p>
+            
+            <div class="font-display text-3xl font-bold text-white mb-6">
+              14 900 Ft <span class="font-sans text-xs font-normal text-zinc-500">/ autótól</span>
+            </div>
+
+            <ul class="space-y-3.5 text-sm text-zinc-300 mb-8">
+              <li class="flex items-start gap-3">
+                <span class="text-gold-400 mt-0.5">✦</span>
+                Teljes utastér és csomagtér porszívózása
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-gold-400 mt-0.5">✦</span>
+                Műszerfal, középkonzol és ajtókárpitok portalanítása, ápolása (matt gyári hatás)
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-gold-400 mt-0.5">✦</span>
+                Szellőzőrácsok és nehezen elérhető rések ecsetes tisztítása
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-gold-400 mt-0.5">✦</span>
+                Belső ablakok és tükrök csíkmentes tisztítása
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-gold-400 mt-0.5">✦</span>
+                Gumi- vagy szövet szőnyegek tisztítása
+              </li>
+            </ul>
+          </div>
+
+          <a href="#foglalas" class="w-full block text-center py-3.5 rounded-xl border border-gold-400/40 text-gold-300 font-semibold text-sm hover:bg-gold-400 hover:text-obsidian transition">
+            Alap csomag foglalása
+          </a>
+        </div>
+
+        <!-- Prémium csomag -->
+        <div class="glass-card rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden border-gold-400/50 shadow-2xl shadow-gold-400/5">
+          <div class="absolute top-5 right-5 gold-gradient text-obsidian text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+            Legnépszerűbb
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs uppercase tracking-widest text-gold-400 font-semibold">02 • Signature</span>
+              <span class="px-3 py-1 rounded-full text-xs bg-gold-400/10 text-gold-300 mr-28 sm:mr-32">Kb. 3 – 5 óra</span>
+            </div>
+            <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mb-2">Prémium Mélytisztítás & Kárpit</h3>
+            <p class="text-zinc-400 text-sm mb-6">Teljes megújulás: folteltávolítás, kárpittisztítás és bőrápolás.</p>
+            
+            <div class="font-display text-3xl font-bold gold-text mb-6">
+              24 900 Ft <span class="font-sans text-xs font-normal text-zinc-500">/ autótól</span>
+            </div>
+
+            <ul class="space-y-3.5 text-sm text-zinc-200 mb-8">
+              <li class="flex items-start gap-3">
+                <span class="text-gold-400 mt-0.5">✦</span>
+                <strong>Minden, amit az Alap csomag tartalmaz</strong>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-gold-400 mt-0.5">✦</span>
+                Szövet ülések, padlókárpit és szőnyegek gépi nedves-száraz kárpittisztítása
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-gold-400 mt-0.5">✦</span>
+                Bőrülések és bőr kormány mélytisztítása + kondicionáló bőrápolás
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-gold-400 mt-0.5">✦</span>
+                Makacs foltok, kiömlött italok és szennyeződések célzott kezelése
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-gold-400 mt-0.5">✦</span>
+                Ajtófalcok tisztítása és prémium utastér-illatosítás
+              </li>
+            </ul>
+          </div>
+
+          <a href="#foglalas" class="w-full block text-center py-3.5 rounded-xl gold-gradient text-obsidian font-bold text-sm hover:opacity-90 transition">
+            Prémium csomag foglalása
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referencia Galéria -->
+  <section id="referencia" class="scroll-mt-20 py-20 px-5 border-t border-white/5">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14">
+        <span class="text-gold-400 text-xs tracking-[0.25em] uppercase font-semibold">Részletekbe Menő Precizitás</span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold mt-2 tracking-tight">Referencia & Végeredmény</h2>
+        <p class="text-zinc-400 text-sm mt-3 max-w-xl mx-auto">
+          Csíkmentes kijelzők, matt gyári hatású műszerfal, pormentes szellőzők és mélytisztított kárpitok.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- 1. kép -->
+        <div class="glass-card rounded-3xl p-3 group overflow-hidden">
+          <div class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-zinc-900">
+            <img src="lexus1.jpeg" alt="Bőrápolás és üléskárpit tisztítás" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5">
+              <span class="text-[10px] uppercase tracking-[0.25em] text-gold-400 font-semibold block mb-1">Signature Kezelés</span>
+              <p class="font-display text-lg font-bold text-white">Bőrápolás & Üléskárpit</p>
+              <p class="text-xs text-zinc-400 mt-0.5">Zsírmentes, matt gyári felület és mélytisztított varrások</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. kép -->
+        <div class="glass-card rounded-3xl p-3 group overflow-hidden">
+          <div class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-zinc-900">
+            <img src="lexus2.jpeg" alt="Középkonzol és szellőzőrácsok precíz tisztítása" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-5 left-5 right-5">
+              <span class="text-[10px] uppercase tracking-[0.25em] text-gold-400 font-semibold block mb-1">Precíz Részletmunka</span>
+              <p class="font-display text-lg font-bold text-white">Középkonzol & Szellőzők</p>
+              <p class="text-xs text-zinc-400 mt-0.5">Ecsetes portalanítás és kíméletes műszerfal-ápolás</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Folyamat & Helyszín -->
+  <section id="folyamat" class="scroll-mt-20 py-20 px-5 border-t border-white/5 bg-charcoal/50">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-gold-400 text-xs tracking-[0.25em] uppercase font-semibold">Egyszerű Folyamat</span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold mt-2 tracking-tight">Hogyan dolgozom</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl border border-white/5 bg-obsidian/60">
+          <span class="text-gold-400 font-display text-xl font-bold">01</span>
+          <h4 class="text-white font-semibold mt-2 mb-1">Online Időpontválasztás</h4>
+          <p class="text-zinc-400 text-sm leading-relaxed">Válaszd ki lent a számodra ideális pénteki, szombati vagy vasárnapi sávot, és írd be az autód típusát.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-white/5 bg-obsidian/60">
+          <span class="text-gold-400 font-display text-xl font-bold">02</span>
+          <h4 class="text-white font-semibold mt-2 mb-1">Pontos Házszám & Visszaigazolás</h4>
+          <p class="text-zinc-400 text-sm leading-relaxed">A sikeres foglalást követően a visszaigazolásban azonnal megkapod a pontos gödi házszámot (Hernád köz) és a naptármeghívót.</p>
+        </div>
+        <div id="helyszin" class="p-6 rounded-2xl border border-white/5 bg-obsidian/60">
+          <span class="text-gold-400 font-display text-xl font-bold">03</span>
+          <h4 class="text-white font-semibold mt-2 mb-1">Rugalmas Átvétel Értesítéssel</h4>
+          <p class="text-zinc-400 text-sm leading-relaxed">Leadás után nem szükséges helyben várakoznod: 30 perccel a befejezés előtt telefonon értesítelek, így kényelmesen visszaérsz az autódért.</p>
+        </div>
+      </div>
+
+      <!-- Praktikus tudnivaló box -->
+      <div class="mt-8 p-6 rounded-2xl border border-gold-400/20 bg-gold-400/[0.03] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-gold-400 font-semibold mb-1">Fontos tudnivaló az érkezéshez</p>
+          <p class="text-sm text-zinc-300 leading-relaxed">
+            A munka jellege miatt helyszíni váróterem nincs — kérlek, az autó leadását úgy tervezd, hogy a tisztítás idejére kísérővel vagy egyénileg távozni tudj, amíg telefonon jelzem az elkészülést.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXKLUZÍV BEÁGYAZOTT IDŐPONTFOGLALÓ (STABIL IFRAME) -->
+  <section id="foglalas" class="scroll-mt-20 py-24 px-4 sm:px-6 border-t border-white/5 relative">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom,_rgba(212,175,55,0.08),_transparent_60%)] pointer-events-none"></div>
+    <div class="max-w-5xl mx-auto relative z-10">
+      <div class="text-center mb-10">
+        <span class="text-gold-400 text-xs tracking-[0.25em] uppercase font-semibold">Online Foglalás</span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold mt-2 tracking-tight">Válassz Időpontot Közvetlenül Itt</h2>
+        <p class="text-zinc-400 text-sm mt-3 max-w-xl mx-auto">
+          Kattints a kívánt napra és órára az alábbi naptárban. A megjegyzésbe kérlek írd be az <strong class="text-zinc-200">autó típusát</strong> és a <strong class="text-zinc-200">választott csomagot</strong> (Alap vagy Prémium).
+        </p>
+      </div>
+
+      <!-- Cal.com Stabil Iframe Beágyazott Keret -->
+      <div class="glass-card rounded-3xl p-2 sm:p-4 shadow-2xl overflow-hidden">
+        <iframe
+          src="https://cal.com/zeteny-nagy-iaj8ln/premium-care-god-belso-autokozmetika?embed=true&theme=dark&layout=month_view"
+          style="width: 100%; height: 680px; border: none; border-radius: 1rem;"
+          loading="lazy"
+          title="Premium Care Göd Időpontfoglalás">
+        </iframe>
+      </div>
+
+      <!-- Tartalék közvetlen link -->
+      <div class="text-center mt-6">
+        <p class="text-xs text-zinc-500">
+          Nem tölt be a naptár a böngésződben? 
+          <a href="https://cal.com/zeteny-nagy-iaj8ln/premium-care-god-belso-autokozmetika" target="_blank" rel="noopener noreferrer" class="text-gold-400 underline hover:text-gold-300 ml-1">
+            Nyisd meg a foglalási oldalt új lapon →
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lábléc -->
+  <footer class="py-10 px-5 border-t border-white/5 text-center text-xs text-zinc-500">
+    <p class="font-display text-sm tracking-wider font-bold text-zinc-300 mb-1">PREMIUM CARE GÖD</p>
+    <p>2131 Göd, Hernád köz (pontos házszám foglalás után) • Belső Autókozmetika & Kárpittisztítás</p>
+    <p class="mt-3 text-zinc-600">© 2026 Premium Care Göd. Minden jog fenntartva.</p>
+  </footer>
+
+</body>
+</html>
